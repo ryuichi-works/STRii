@@ -12,6 +12,7 @@ services:
   web-backend:
     build: ./docker/php
     container_name: backend-container
+    tty: true
     ports:
       - 80:80
     volumes:
